@@ -74,7 +74,7 @@ const carex5 = {
   // Change the `model` property of `myCar` to 'q7'. Log both objects.
   
   // Your code here
-  const myCar = {...car2}
+  const myCar = {...carex5}
   myCar.make = 'Toyota'
   myCar.model= 'q7'
 
@@ -119,6 +119,7 @@ console.log( userProfile)
 // console.log(name, age, job);
 
 
+//============================================
 
 
 // Exercise 8: Default parameters
@@ -135,6 +136,7 @@ const fun = (noun='cat' ,  adjective='white') => {
     return "The "+noun +" is "+adjective;
  }
  console.log( fun())
+//============================================
 
 
 
@@ -142,7 +144,67 @@ const fun = (noun='cat' ,  adjective='white') => {
 
 
 
+//  Exercise 9: Ternary operator
+// Convert the following `if...else` statement in to a ternary:
 
+let pizza3 = 'tasty';
+
+if (pizza3 === 'tasty') {
+  console.log('yum');
+} else {
+  console.log('yuck');
+}
+//This logic can be streamlined using a ternary:
+
+let pizza ='tasty' ? "yum" : "yuck";
+console.log(pizza);
+
+
+// Your code here
+//============================================
+
+
+
+
+
+//  Exercise 10: Boolean gates
+
+// 1. SET LANGUAGE
+
+// Construct a single line of code that assigns a default value using the logical OR operator. This line should match the logic of the following statement: 
+
+// "LANG is equal to localLangConfig or the default value of English."
+
+const localLangConfig = "es"; // Change to 'es', 'fr', etc., or keep it null
+const LANG = localLangConfig || 'ar';  
+
+
+// Log the result
+console.log('Language setting:', LANG);
+
+
+// 2. SET WEBSITE THEME
+const userSavedTheme = 'dark'; // Change to 'dark', 'contrast', etc., or keep it null
+const USER_THEME = userSavedTheme || 'light';
+
+console.log('User theme setting:', USER_THEME);
+
+//============================================
+
+
+
+
+
+//  Exercise 11: Optional chaining
+ // Now check for `cat.age` on `adventurer`. See how it errors out? Use optional chaining in a console.log that it returns undefined instead.
+ 
+ const adventurer = {
+   name: 'Alice',
+ };
+ 
+ let cat = adventurer.age?.name;; // Your code here
+ 
+ console.log(cat);
 
 
 
