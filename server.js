@@ -92,10 +92,49 @@ userProfile[propertyName] = "Fadel";
 console.log( userProfile)
 
 // Exercise 7: Import and Export
+// Exercise 7: Import and Export
+// Follow the steps below for some practice with import and export. Update the values for default, age, and job accordingly:
+
+// Initialize a node project:
+// npm init -y
+// Add the following property to package.json:
+// "type":"module",
+// Create two files: exportingFile.js and importingFile.js:
+// touch exportingFile.js
+// touch importingFile.js
+// In exportingFile.js add the following:
+// export default 'Matt';
+// In importingFile.js add the following:
+// import name from './exportingFile.js';
+// console.log(name);
+// Run importingFile.js like so:
+// node importingFile.js
+// To export additional values, update exportingFile.js like so:
+// export default 'Matt';
+// export const age = 43;
+// export const job = 'programmer';
+// These additions can be imported by updating importingFile.js like so:
+
+// import name, { age, job } from './exportingFile.js';
+// console.log(name, age, job);
 
 
 
 
+// Exercise 8: Default parameters
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+const fun = (noun='cat' ,  adjective='white') => {
+    return "The "+noun +" is "+adjective;
+ }
+ console.log( fun())
 
 
 
